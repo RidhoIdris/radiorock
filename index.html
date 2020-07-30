@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Player 89FM A Rádio Rock</title>
+    <link rel="stylesheet" href="./index.css">
+    <link rel="icon" type="image/png" href="./img/logo1.png" />
+</head>
+<body>
+    <div style="background-color: #a1a1a1;" class="h-screen md:overflow-hidden">
+        <div class="h-10p bg-black">
+            <div class="container mx-auto flex justify-between px-4 md:px-0">
+                <div class="w-64 -lg:hidden"></div>
+                <img src="./img/logo1.png" class="w-20 cursor-pointer">
+                <div class="flex items-center justify-center space-x-2">
+                    <img src="./img/play-store.png" class="w-32 cursor-pointer">
+                    <img src="./img/apple-store.png" class="w-32 cursor-pointer">
+                </div>
+            </div>
+        </div>
+        <div class="h-20p">
+            <div class="container mx-auto flex justify-between items-center h-full px-4 md:px-0">
+                <div class="text-white">
+                    <p class="italic text-xl md:text-2xl">Você está ouvindo agora na</p>
+                    <span class="text-2xl md:text-5xl">89 <span class="font-black">A Rádio Rock</span> </span>
+                </div>
+                <div class="bg-gray-500 w-50p py-5 flex justify-center items-center">
+                    <p class="italic text-white">ads</p>
+                </div>
+            </div>
+        </div>
+        <div class="py-5 md:h-10p md:py-2 bg-black relative">
+            <div class="container mx-auto relative flex items-center h-full space-x-16 px-4 md:px-0">
+                <div class="text-white text-xl">
+                    <p class="italic font-semibold">#ORockMeEnsinou </p>
+                    <span>89FM A Rádio Rock</span>
+                </div>
+                <div class="w-1 h-6 bg-white"></div>
+                <div class="text-white text-sm">
+                    <p class="text-center">Faça agora mesmo o download aqui e tenha <br class="hidden md:block" /> o Rock sempre com você!</p>
+                </div>
+                <div class="bg-gray-500 w-64 h-64 hidden md:flex justify-center items-center absolute right-0 top-0 -mt-2">
+                    <p class="italic text-white">ads</p>
+                </div>
+            </div>
+        </div>
+        <div class="md:h-40p">
+            <div class="container mx-auto flex  py-5 h-full px-4 md:px-0">
+               <div class="flex flex-col space-y-3">
+                   <button style="background-color: #ffd400;" class="w-64 py-3 text-xl text-black font-bold">VER LETRA</button>
+                   <button style="background-color: #00b7f3;" class="w-64 py-3 text-xl text-white font-bold">VER LETRA</button>
+                   <button style="background-color: #e31214;" class="w-64 py-3 text-xl text-white font-bold">VER LETRA</button>
+               </div>
+               <div class=" ml-8 md:ml-24 text-white">
+                <span class="font-bold text-xl">JA TOCOU</span>
+                <ul class="mt-4 uppercase text-xl -space-y-1">
+                    <li>BLINK 182 - FEELING THIS</li>
+                    <li>OS PARALAMAS DO SUCESSO - A NOVIDADE</li>
+                    <li>AMESLARI - START</li>
+                </ul>
+               </div>
+            </div>
+        </div>
+        <div class="md:h-20p bg-black py-8 md:py-0">
+            <div class="container mx-auto flex justify-between items-center h-full flex-col md:flex-row space-y-5 md:space-y-0">
+                <img src="./img/logo2.png" class="w-20 cursor-pointer">
+                <div class="text-white flex space-x-2 flex-col justify-center items-center">
+                    <h1 class="text-xl">89 FM A Rádio Rock</h1>
+                    <div class="flex mt-4 justify-center items-center space-x-3">
+                        <svg width="24" id="play" onclick="play()" class="cursor-pointer" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M2 12C2 6.48 6.47998 2 12 2C17.52 2 22 6.48 22 12C22 17.52 17.52 22 12 22C6.47998 22 2 17.52 2 12ZM16 12L10 7.5V16.5L16 12Z" fill="white"/>
+                        </svg>
+                        <svg width="24" height="24" id="pause" onclick="pause()" class="cursor-pointer hidden" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.47998 2 2 6.48 2 12C2 17.52 6.47998 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM11 16H9V8H11V16ZM13 16H15V8H13V16Z" fill="white"/>
+                        </svg>
+                        <input type="range" class="w-56">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M14 5.29V3.23C18.01 4.14001 21 7.72 21 12C21 16.28 18.01 19.86 14 20.77V18.71C16.89 17.85 19 15.17 19 12C19 8.83 16.89 6.15 14 5.29ZM3 15V9H7L12 4V20L7 15H3ZM10 15.17V8.83L7.83002 11H5V13H7.83002L10 15.17ZM16.5 12C16.5 10.23 15.48 8.71 14 7.97V16.02C15.48 15.29 16.5 13.77 16.5 12Z" fill="white"/>
+                        </svg>
+                    </div>
+                </div>
+                <div class="flex space-x-2">
+                    <div class="w-10 h-10 bg-white rounded-full flex justify-center items-center cursor-pointer"><img src="./img/fb.png" class="w-6 h-6"></div>
+                    <div class="w-10 h-10 bg-white rounded-full flex justify-center items-center cursor-pointer"><img src="./img/ig.png" class="w-6 h-6"></div>
+                    <div class="w-10 h-10 bg-white rounded-full flex justify-center items-center cursor-pointer"><img src="./img/twiter.png" class="w-6 h-6"></div>
+                    <div class="w-10 h-10 bg-white rounded-full flex justify-center items-center cursor-pointer"><img src="./img/yt.png" class="w-6 h-6"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        function play() {
+            var play = document.getElementById("play");
+            var pause = document.getElementById("pause");
+            play.style.display = "none";
+            pause.style.display = "block";
+        }
+        function pause() {
+            var pause = document.getElementById("pause");
+            var play = document.getElementById("play");
+            pause.style.display = "none";
+            play.style.display = "block";
+        }
+    </script>
+</body>
+</html>
